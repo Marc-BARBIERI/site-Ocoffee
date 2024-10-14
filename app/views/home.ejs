@@ -1,0 +1,38 @@
+<%- include('./partials/header') %>
+
+
+    <div class="box__photo__accueil">
+        <div class="box__button"> 
+            <h1 class="title__h1">O'Coffee</h1>
+        </div>
+    </div>
+   <div class="description__accueil">
+    <p>
+        Jean et Jacques Pepper, deux frères passionnés par le café, sont les fondateurs de notre boutique. Avec une expertise approfondie et un amour profond pour cette délicieuse boisson, ils ont créé un espace où le café est célébré comme une expérience raffinée et inspirante.
+    </p>
+   </div>
+
+   <h2 class="title__nouveauté">Nos Nouveautés</h2>
+
+   <div class="grid__article">
+       <% coffee.forEach( (coffees) => { %>
+
+   <article class="card__cafe__nouveaute-1">
+    <div class="card__info-cafe">
+        <div class="container__img-cafe-accueil">
+           <img class="img-cafe" src="./visuals/<%= coffees.reference %>.png" alt="photo café"> 
+        </div>
+        <h3 class="title__info-cafe"><%= coffees.name %></h3>
+        <p>"Café moyennement corsé avec une acidité vive et une saveur riche."
+        </p>
+        <p class="p-description" ><%= coffees.taste %></p> 
+        <div class="container__Btn-accueil">
+        <a class="button_info-accueil" href="/catalogue">Voir plus</a>
+        </div>
+    </div>
+    </article>
+    
+    <% }) %>
+</div>
+
+<%- include('./partials/footer') %>

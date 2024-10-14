@@ -1,0 +1,23 @@
+
+<%- include('./partials/header') %>
+
+<div class="container_produit">
+
+<article class="card__cafe-produit">
+    <div class="card__info-produit">
+        <div class="container__img-cafe-produit">
+        <img class="img-cafe" src="/visuals/<%= coffee.reference %>.png" alt="photo café"> 
+        </div>
+        <h4 class="title__info-cafe"><%= coffee.name %></h4>
+        <p class="p-description"><%= coffee.description %>
+        </p>
+        <p class="p-description" >Origine : <%= coffee.origin %></p> 
+        <p class="p-description" >Prix au kilo : <%= coffee.price %>€</p> 
+        <p class="p-description" >Caractéristique principale :<%= coffee.taste %></p>
+        <a class="button_info-produit"  href="/">Ajoutez au panier</a>
+    </div>
+</article>
+
+</div>
+
+<%- include('./partials/footer') %>

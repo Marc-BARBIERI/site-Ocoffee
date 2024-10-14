@@ -1,0 +1,43 @@
+<%- include('./partials/header') %>
+
+<div class="container__photo__catalogue">
+    <div class="container_titre-catalogue">
+    <h2 class="titre-catalogue">Notre Catalogue</h2>
+    </div>
+</div>
+
+
+<div class="container__Btn__Recherche" >
+    <form class="container__form" class="btn__Recherche" action="/catalogue" method="get">
+            <select class="btn__Select" name="taste" id="taste">
+                <option value="null">Aucun</option>
+                <option value="Fruité">fruité</option>
+                <option value="Acide">Acide</option>
+                <option value="Corsé">Corsé</option>
+                <option value="Doux">Doux</option>
+                <option value="Chocolaté">Chocolaté</option>
+            </select>
+        <input class="btn__recherche" type="submit" value="Chercher">
+    </form>
+</div>
+
+<section class="section__produit">
+    <% coffee.forEach( (coffees) => { %>
+<article class="card__cafe-1">
+    <div class="card__info-cafe">
+        <div class="container__img-cafe-accueil">
+           <img class="img-cafe" src="visuals/<%= coffees.reference %>.png" alt="photo café"> 
+        </div>
+        <h4 class="title__info-cafe"><%= coffees.name%></h4>
+        <p>Origine : <%= coffees.origin %></p>
+        <p class="p-description" ><%= coffees.taste %></p> 
+        <a class="button_info-accueil"  href="/detailProduit/<%= coffees.id %>">voir les détails</a>
+    </div>
+</article>
+<% }) %>
+</section>
+<div class="container-btn">
+<div class="btn__Afficher-plus"> afficher plus</div>
+</div>
+
+<%- include('./partials/footer') %>

@@ -143,7 +143,7 @@ margin: 0 20px;
 
 /*-----------IMAGE ACCEUIL AVEC SON TITRE-----------*/
 
-.box__photo__accueil{
+.box__photo--accueil{
    background-image: url(/visuals/café-catalogue.jpg);
    background-repeat: no-repeat;
    background-size: cover;
@@ -227,11 +227,6 @@ h2{
 
 /*----------Article-cafe accueil-------*/
 
-.card__info-cafe{
-   
-
-}
-
 .grid__article {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -239,7 +234,7 @@ h2{
     width: 100;    
 }
 
-.card__cafe__nouveaute-1{
+.card__cafe--nouveaute{
     margin: 1rem;
     border-radius: 10px;
     background-color: rgba(59, 44, 44, 0.315);
@@ -258,7 +253,7 @@ h2{
     height: 20rem;   
 }
 
-.title__info-cafe{ 
+.title__info--cafe{ 
     color:rgb(0, 0, 0);
     font-size: 0.7rem;
     margin: auto;
@@ -283,7 +278,7 @@ h2{
     font-size: 0.8rem;    
 }
 
-.img-cafe{
+.card__img{
     width: 100%;
     height: 10rem;
     border-radius: 10px;
@@ -291,12 +286,12 @@ h2{
     object-fit: cover;
     
 }
-.card__cafe__nouveaute-1:hover{
+.card__cafe--nouveaute:hover{
     transform: scale(1.1);
 
 }
 
-.container__img-cafe-accueil{ 
+.container__img__cafe--accueil{ 
     
     height: 10rem;
     border-radius: 10px;   
@@ -310,7 +305,7 @@ h2{
         
           }
           
-          .card__cafe__nouveaute-1{
+          .card__cafe--nouveaute{
             grid-column: 1/3;
             width: 20rem;
             margin: auto;
@@ -332,12 +327,12 @@ h2{
                     
                 }                
             
- .container__Btn-accueil{
+ .container__Btn--accueil{
     display: flex;
     justify-content: center;
     height: 1rem;
  }              
-.button_info-accueil{
+.button__info--accueil{
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 10px;   
@@ -345,33 +340,27 @@ h2{
 
 /*-----------catalogue---------*/
 
-.button-info{
-    text-decoration: none;
-    font-size: 50px;
-}
 
-.container__photo__catalogue{
-    margin-top: 0.1rem;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-.container_titre-catalogue{
+.container__titre--catalogue{
     width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
 
 }
-.container__photo__catalogue{
+.container__photo--catalogue{
     background-image: url(/visuals/photo--café.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 33rem;
     max-width: 100%;
+    margin-top: 0.1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
-.titre-catalogue{
+.titre__catalogue{
     color: white;
     font-size: 100px;
     text-align: center;
@@ -405,7 +394,7 @@ h2{
     text-decoration: none;
     padding: 10px;
 }       
-.card__cafe-1{
+.card__cafe{
     width: 12rem;
     border-radius: 10px;
     background-color: rgba(59, 44, 44, 0.315);
@@ -417,23 +406,23 @@ h2{
     animation-range-end:contain 50%;
     box-shadow: 0 2px 10px rgba(8, 7, 7, 0.3);
 }
-.card__cafe-1:hover {
+.card__cafe:hover {
     transform: scale(1.1);
 }
-.card__cafe-1:nth-child(1),
-.card__cafe-1:nth-child(2),
-.card__cafe-1:nth-child(3),
-.card__cafe-1:nth-child(4)
+.card__cafe:nth-child(1),
+.card__cafe:nth-child(2),
+.card__cafe:nth-child(3),
+.card__cafe:nth-child(4)
 {
     display: inline-block;
 }
 
-.container-btn{
+.container__btn{
     display: flex;
     justify-content: center;
 }
 
-.btn__Afficher-plus{
+.btn__Afficher--plus{
     margin-top: 2rem;
     padding: 3px 10px;
     border: 1px solid #334;
@@ -443,14 +432,14 @@ h2{
     cursor: pointer;
     border-radius: 5px;
 }
-.btn__Afficher-plus:hover{
+.btn__Afficher--plus:hover{
     background-color: rgba(59, 44, 44, 0.829);
     border-color: rgba(59, 44, 44, 0.829);
     color: #f1f1f1;
     border-radius: 5px;
 
 }
-.container__Btn__Recherche{
+.container__Btn--Recherche{
     display: flex;
     justify-content: center;
 }
@@ -480,19 +469,20 @@ h2{
         justify-content: center;
         margin-top: 3rem;
           }
-          .card__cafe-1{
+          .card__cafe{
             grid-column: 1/3;
             width: 100%;
             height: 14rem;
             
             }   
-            .container__img-cafe-accueil{
+            .container__img__cafe--accueil{
                 height: 8rem;  
             }
-            .img-cafe{
+            .img__cafe{
                 height: 8rem; 
+                width: 100%;
             }
-            .titre-catalogue{
+            .titre__catalogue{
                 font-size: 60px;
                 margin: auto;
             }
@@ -551,7 +541,7 @@ h3{
     font-size: 35px;
 }
     
-.card__cafe-produit{
+.card__cafe--produit{
     width:16rem;
     height: 23rem;
     background-color: #9b939352;
@@ -559,11 +549,11 @@ h3{
     margin: auto;
 
 }
-.card__cafe-produit:hover{
+.card__cafe--produit:hover{
     transform: scale(1.1);
 }
 
-.button_info-produit{
+.button__info--produit{
     margin-left: 4.4rem;
     color: white;
     text-decoration: none;
@@ -574,18 +564,18 @@ h3{
    font-size: 13px;
 }
 
-.container_produit{
+.container__produit{
     height: 25rem;
     margin-top: 7rem;
 }
 
-.container__img-cafe-produit{
+.container__img__cafe--produit{
     margin: auto;
 }
-.card__info-produit{
+.card__info--produit{
     margin: auto;
 }
-.p-description{
+.card__description{
    
      text-align: center;
 }

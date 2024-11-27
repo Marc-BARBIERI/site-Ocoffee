@@ -18,11 +18,11 @@ allLinks.forEach(function(item){
 
 })
 
-const afficherBtn = document.querySelector('.btn__Afficher-plus');
+const afficherBtn = document.querySelector('.btn__Afficher--plus');
 let currentItem = 4;
 
 afficherBtn.onclick = ()=>{
-    let box = [...document.querySelectorAll('.card__cafe-1')];
+    let box = [...document.querySelectorAll('.card__cafe')];
     for(let i = currentItem; i < currentItem + 4; i++){
         box[i].style.display = 'inline-block';
     };

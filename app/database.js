@@ -1,7 +1,13 @@
 const { Client } = require('pg');
 
-const client = new Client(process.env.PG_URL);
+const client = new Client({
+  connectionString: process.env.PG_URL,
+  ssl: { rejectUnauthorized: false }
+});
 
-client.connect();
+client.connect()
+  .then(() => console.log('Connected to database'))
+  .catch(err => console.error('Database connection error', err));
+
 
 module.exports = client;

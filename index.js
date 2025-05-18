@@ -29,7 +29,7 @@ app.use(notFound);
 const port = process.env.PORT || 3010;
 
 app.listen(port, () => {
-    console.log(`Server listening on ${process.env.BASE_URL}:${port}`);
+    console.log(`Server listening on port ${port}`);
 });
 
 

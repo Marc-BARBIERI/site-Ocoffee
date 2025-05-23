@@ -6,17 +6,19 @@
 
 > Projet réalisé dans le cadre de ma formation développeur web chez O’clock.  
 > L’objectif : répondre à un besoin client en affichant un catalogue de cafés et en offrant une navigation simple.
-
+<br>
+> Mettre en pratique le Templating EJS et les partials.
 ---
 
 ## 📸 Aperçu du projet
 
-### Page d’accueil
+### Page d’accueil desktop et mobile
+<img src="public/visuals/Page-Accueil.png" alt="Description" width="400" style="margin-right: 20px;"/>  
+<img src="public/visuals/Page-Accueil-mobile.png" alt="Description" height="440" width="350"/>
 
-
-### Tri des cafés
-
-
+### Page Catalogue desktop et mobile avec choix des cafés
+<img src="public/visuals/Page-Catalogue.png" alt="Description" width="400" style="margin-right: 20px;"/>  
+<img src="public/visuals/Page-Catalogue-mobile.png" alt="Description" height="380" width="270"/>
 ---
 
 ## ✨ Fonctionnalités principales
@@ -32,6 +34,6 @@
 - **Frontend** : HTML, CSS, JavaScript
 - **Templating** : EJS
 - **Backend** : Node.js + Express
-- **BDD** : PostgreSQL *(optionnelle, selon la version locale)*
+- **BDD** : PostgreSQL
 
 ---

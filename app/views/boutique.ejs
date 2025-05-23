@@ -41,31 +41,28 @@
 
             <h3 class="title_form">Fiche de Contact</h3>
 
-            <form class="container__form">
-                <fieldset class="fieldset__container">
-                    <div>
-                        <h5>Nom</h5>
-                        <label for=""></label>
-                        <input class="input__form" type="text">
-                    </div>
-                    <div>
-                        <h5>Email</h5>
-                        <label for=""></label>
-                        <input class="input__form"  type="text">
-                    </div>
-                    <div>
-                        <h5>Service</h5>
-                        <label for=""></label>
-                        <input class="input__form"  type="text">
-                    </div>
-                    <div>
-                        <h5>Message</h5>
-                        <label for=""></label>
-                        <textarea class="textArea"></textarea>
-                    </div>
+        <form class="container__form--contact">
+            <fieldset class="fieldset__container">
+                <div class="form__group">
+                    <label for="nom">Nom</label>
+                    <input id="nom" name="nom" class="input__form" type="text">
+                </div>
+                    <div class="form__group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" class="input__form" type="email">
+                </div>
+                    <div class="form__group">
+                    <label for="service">Service</label>
+                    <input id="service" name="service" class="input__form" type="text">
+                </div>
+                <div class="form__group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="textArea"></textarea>
+                </div>
                     <button class="btn__form" type="submit">Envoyer</button>
-                </fieldset>
-            </form>
+            </fieldset>
+        </form>
+
 
         
             <%- include('./partials/footer') %>

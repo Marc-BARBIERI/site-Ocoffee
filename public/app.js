@@ -1,33 +1,38 @@
+const btnMenu = document.querySelector(".logo__menu");
+const menu = document.querySelector(".list__nav");
 
+btnMenu.addEventListener("click", () => {
+	menu.classList.toggle("active");
+});
 
-const btnMenu = document.querySelector('.logo__menu');
-const menu = document.querySelector('.list__nav');
+const allLinks = document.querySelectorAll(".item__nav");
 
-btnMenu.addEventListener('click', function(){
-    menu.classList.toggle('active');
-})
+for (const item of allLinks) {
+	item.addEventListener("click", () => {
+		menu.classList.toggle("active");
+	});
+}
 
+const afficherBtn = document.querySelector(".btn__Afficher--plus");
+const cards = [...document.querySelectorAll(".card__cafe")];
 
-const allLinks = document.querySelectorAll('.item__nav');
+if (afficherBtn && cards.length > 0) {
+	let currentItem = 4;
 
-allLinks.forEach(function(item){
+	for (let i = currentItem; i < cards.length; i++) {
+		cards[i].style.display = "none";
+	}
 
-    item.addEventListener('click', function(){
-        menu.classList.toggle('active');
-    })
+	afficherBtn.onclick = () => {
+		for (let i = currentItem; i < currentItem + 4; i++) {
+			if (cards[i]) {
+				cards[i].style.display = "inline-block";
+			}
+		}
+		currentItem += 4;
 
-})
-
-const afficherBtn = document.querySelector('.btn__Afficher--plus');
-let currentItem = 4;
-
-afficherBtn.onclick = ()=>{
-    let box = [...document.querySelectorAll('.card__cafe')];
-    for(let i = currentItem; i < currentItem + 4; i++){
-        box[i].style.display = 'inline-block';
-    };
-    currentItem += 4 ;
-    if(currentItem >= box.length){
-        afficherBtn.style.display = 'none';
-    }
+		if (currentItem >= cards.length) {
+			afficherBtn.style.display = "none";
+		}
+	};
 }

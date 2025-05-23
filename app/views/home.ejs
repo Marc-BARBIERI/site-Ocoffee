@@ -14,25 +14,26 @@
 
    <h2 class="title__nouveauté">Nos Nouveautés</h2>
 
-   <div class="grid__article">
-       <% coffee.forEach( (coffees) => { %>
 
-   <article class="card__cafe--nouveaute">
-    <div>
-        <div class="container__img__cafe--accueil">
-           <img class="card__img" src="./visuals/<%= coffees.reference %>.png" alt="photo café"> 
-        </div>
-        <h3 class="title__info--cafe"><%= coffees.name %></h3>
-        <p>"Café moyennement corsé avec une acidité vive et une saveur riche."
-        </p>
-        <p class="card__description" ><%= coffees.taste %></p> 
-        <div class="container__Btn--accueil">
-        <a class="button__info--accueil" href="/catalogue">Voir plus</a>
-        </div>
-    </div>
-    </article>
-    
+<div class="grid__article">
+      <div class="grid__article--accueil"></div>
+    <% coffee.forEach( (coffees) => { %>
+        <article class="card__cafe--nouveaute">
+             <div>
+                <div class="container__img__cafe--accueil">
+                    <img class="card__img" src="./visuals/<%= coffees.reference %>.png" alt="photo café"> 
+                </div>
+                    <h3 class="title__info--cafe"><%= coffees.name %></h3>
+                    <p>"Café moyennement corsé avec une acidité vive et une saveur riche."
+                    </p>
+                    <p class="card__description" ><%= coffees.taste %></p> 
+                <div class="container__Btn--accueil">
+                    <a class="button__info--accueil" href="/catalogue">Voir plus</a>
+                </div>
+            </div>
+        </article>  
     <% }) %>
+   </div>
 </div>
 
 <%- include('./partials/footer') %>

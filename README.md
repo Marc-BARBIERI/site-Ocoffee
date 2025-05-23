@@ -17,7 +17,7 @@
 <img src="public/visuals/Page-Accueil-mobile.png" alt="Description" height="440" width="350"/>
 
 ### Page Catalogue desktop et mobile avec choix des cafés
-<img src="public/visuals/Page-Catalogue.png" alt="Description" width="400" style="margin-right: 20px;"/>  
+<img src="public/visuals/Page-catalogue.png" alt="Description" width="400" style="margin-right: 20px;"/>  
 <img src="public/visuals/Page-Catalogue-mobile.png" alt="Description" height="380" width="270"/>
 ---
 
